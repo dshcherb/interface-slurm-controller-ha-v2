@@ -21,7 +21,7 @@ from charmhelpers.contrib.templating.contexts import dict_keys_without_hyphens
 class ControllerHA(reactive.Endpoint):
 
     @reactive.when('endpoint.{endpoint_name}.joined')
-    def provide_peer_data(self, config, hostname=socket.gethostname()):
+    def provide_peer_data(self, hostname=socket.gethostname()):
         # technically, there is only one peer relation but we have a list
         for rel in self.relations:
             rel.to_publish['hostname'] = hostname
