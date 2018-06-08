@@ -1,0 +1,3 @@
+name: slurm-controller-ha-v2
+summary: An interface for active-backup HA of slurm controllers
+maintainer: omnivector <omnivector@omnivector.solutions>
